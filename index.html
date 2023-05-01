@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Favorites</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script src="js/main.js" type="module" defer></script>
+
 </head>
 <body>
     
@@ -12,15 +21,60 @@
         <header>
             <h1>Github Favorites</h1>
             <div class="search">
-                <label for="input-search">Usúario do Github</label>
+                <label class="sr-only" for="input-search">Usúario do Github</label>
                 <input id="input-search" type="text" name="" id="" placeholder="Usuario do Github">
                 <button>&plus;</button>
             </div>
         </header>
         
         <table>
-            <thead></thead>
-            <tbody></tbody>
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Repositórios</th>
+                    <th>Seguidores</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/andrelumertz.png" alt="imagem de Andre Lumertz" target="_blank">
+                        <a href="">
+                            <p>André Martins</p>
+                            <span>andrelumertz</span>
+                        </a>
+                    </td>
+                    <td class="repositores">
+                        76
+                    </td>
+                    <td class="followers">
+                        9589
+                    </td>
+                    <td>
+                        <button class="remove">&times;</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/andrelumertz.png" alt="imagem de Andre Lumertz" target="_blank">
+                        <a href="">
+                            <p>André Martins</p>
+                            <span>andrelumertz</span>
+                        </a>
+                    </td>
+                    <td class="repositores">
+                        76
+                    </td>
+                    <td class="followers">
+                        9589
+                    </td>
+                    <td>
+                        <button class="remove">&times;</button>
+                    </td>
+                </tr>
+            </tbody>
             <tfoot></tfoot>
         </table>
 
